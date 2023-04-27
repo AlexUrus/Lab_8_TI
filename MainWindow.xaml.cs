@@ -38,7 +38,7 @@ namespace Lab_3_TI
                 byte b = (byte)c;
                 byte newByte = 0;
 
-                for (int i = 4; i < 8; i++)
+                for (int i = 0; i < 16; i++)
                 {
                     if ((b & (1 << i)) != 0 && i != 7)
                     {

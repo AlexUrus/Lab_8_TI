@@ -25,12 +25,12 @@ namespace Lab_3_TI
         {
             int value = (int)c;
             string binary = "";
-            for (int i = 0; i < 8; i++)
+            for (int i = 0; i < 16; i++)
             {
                 binary = ((value & 1) == 1 ? "1" : "0") + binary;
                 value >>= 1;
             }
-            return binary;
+            return binary.Insert(8," ");
         }
 
         private string GetDecimalRepresentation(char c)
